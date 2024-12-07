@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Make sure the body takes up the full viewport height */
+    background-image: url('./img/bg.jpeg'); /* Add your image path */
+    background-size: cover;   /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image in the middle */
+    background-attachment: fixed;  /* Keeps the background fixed during scrolling */
+}
+
+#toast-container {
+    position: absolute;  /* Position relative to the closest positioned ancestor or viewport */
+    top: 40%;             /* Move the container 50% down from the top of the viewport */
+    left: 60%;            /* Move the container 50% from the left of the viewport */
+    transform: translate(-50%, -50%); /* Offset by 50% of its own width and height to truly center it */
+    font-family: Arial, sans-serif;    
+}
+
+.task_dashboard {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 15%;
+    left: 22%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#task_section{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#clearAllButton{
+    margin-left: 89.5%;
+    margin-top: 10px;
+  }
+
+/* Task Main Dashboard Container Styles */
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Task List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
+
+li .buttons {
+    display: inline-flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+li .buttons button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+li .buttons button.edit {
+    background-color: tomato;
+}
+
+li .buttons button.edit:hover {
+    background-color: rgb(255, 194, 71);
+}
+
+li .buttons button.complete {
+    background-color: green;
+}
+
+li .buttons button.complete:hover {
+    background-color: rgb(74, 213, 74);
+}
+
+li .buttons button.delete {
+    background-color: red;
+    color: #fff;
+}
+
+li .buttons button.delete:hover {
+    background-color: rgb(243, 128, 128);
+}
+

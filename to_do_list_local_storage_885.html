@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 2 Assign2: To-Do List 937885</title>
+
+    <!-- Style Sheet-->
+    <link rel="stylesheet" href="to_do_list_local_storage_885.css">
+
+     <!-- JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Toastr CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    
+    <!-- Toastr JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>  
+</head>
+<body>
+
+    <div class="task_dashboard">
+        <h1>To-Do List</h1>
+        
+        <!-- Task Input -->
+        <div id="div_dashboard">
+            <input type="text" id="task_title" placeholder="To-Do Name" required>
+            <textarea id="task_desc" placeholder="To-Do Description" required></textarea>
+            <button id="add_task_btn">Add Task</button>
+        </div>
+
+        <!-- Task List Section -->
+        <section id="task_section">
+            <button id="clearAllButton">Clear All</button>
+            <ul id="task_list"></ul>
+        </section>
+    </div>
+
+    <script src="to_do_list_local_storage_885.js"></script>
+
+</body>
+</html>
