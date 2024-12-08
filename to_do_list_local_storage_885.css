@@ -133,11 +133,19 @@ li .buttons button.delete:hover {
     background-color: rgb(243, 128, 128);
 }
 
-@media (max-width: 480px) {
+/* Responsive Design */
+@media (max-width: 992px) {
     #clearAllButton{
-        margin-left: 65.5%;
+        margin-left: 72.5%;
         margin-top: 10px;
         width: 80px;
+      }
+
+}
+
+@media (max-width: 480px) {
+    #clearAllButton{
+        margin-left: 60%;
       }
 
     li .buttons {
