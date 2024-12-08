@@ -41,8 +41,10 @@ h1 {
 }
 
 #clearAllButton{
-    margin-left: 89.5%;
-    margin-top: 10px;
+    margin-left: 85%;
+    margin-top: 10px;    
+    width: 15%;
+    font-size: 18px;
   }
 
 /* Task Main Dashboard Container Styles */
@@ -136,16 +138,28 @@ li .buttons button.delete:hover {
 /* Responsive Design */
 @media (max-width: 992px) {
     #clearAllButton{
-        margin-left: 72.5%;
+        margin-left: 75%;
         margin-top: 10px;
-        width: 80px;
+        width: 25%;
+        font-size: 18px;
+      }
+
+}
+
+@media (max-width: 830px) {
+    #clearAllButton{
+        margin-left: 74%;
+        margin-top: 10px;
+        
       }
 
 }
 
 @media (max-width: 480px) {
     #clearAllButton{
-        margin-left: 60%;
+        margin-left: 65%;
+        width: 35%;
+        font-size: 14px;
       }
 
     li .buttons {
